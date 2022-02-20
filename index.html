@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio Virtual</title>
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body id="body" class="">
+    
+    <header class="header">
+        <nav class="header--navBar">
+            <div class="boxAnimados"></div>
+            <a class="header--navBar-a" href="#">Feriados</a>
+            <a class="header--navBar-a" href="#">Ferramentas</a>
+            <a class="header--navBar-a" id='mudarCor'  href="#"><img class="header--navBar-a-img" src="./src/img/modo-escuro.png" alt="Modo Escuro"></a>
+            <a class="header--navBar-a"><img class="header--navBar-a-img" src="./src/img/configuracao.png" alt="Configurações"></a>
+
+        </nav>
+        
+        
+    </header>
+    
+    <div class="alinharContainer">
+        <aside class='boxLeft '>
+            <ul class = 'boxLeft__content'>
+                <li class = 'boxLeft__content--li'>
+                    <img class = 'boxLeft__content--img'src="./src/img/despertador.png" alt="Despertador">
+                    <a href="#" class='boxLeft__content--a la'>Despertador</a>
+                </li>
+                <li class = 'boxLeft__content--li'>
+                    <img class = 'boxLeft__content--img'src="./src/img/temporizador.png" alt="Temporizador">
+                    <a id='temporizador' href="#"class='boxLeft__content--a' >Temporizador</a>
+                </li>
+                <li class = 'boxLeft__content--li'>
+                    <img class = 'boxLeft__content--img'src="./src/img/cronometros.png" alt="Cronômetro">
+                    <a id='cronometro'href="#"class='boxLeft__content--a la'>Cronômetro</a>
+                
+                </li>
+                <li class = 'boxLeft__content--li'>
+                    <img class = 'boxLeft__content--img'src="./src/img/relogio.png" alt="Relógio">
+                    <a id ='relogio'href="#"class='boxLeft__content--a'>Relógio</a>
+                </li>
+            </ul>
+        </aside>
+        
+        <main class='main mudarMain'>
+           <article class='main__content'>
+               <h1 id='titleClock' class="' main__content--titlle">Horário atual: </h1>
+               <span class=' clock main__content--relogio'>00:00:01</span>
+               <span id='temp1' class='remover main__content--relogio'></span>
+               <span id='textCrono' class='remover main__content--relogio'></span>
+               <div class="alinharButton">
+                   <button id="start" class="  remover main__button-cronometro ">Start</button>
+                   <button id='pause' class="  remover main__button-cronometro ">Pause</button>
+                   <button id='stop' class="  remover main__button-cronometro ">Stop</button>
+                   <button id='reset' class="  remover main__button-cronometro ">Reset</button>
+               </div>
+
+               <p id='date' class='main__content--data'>Sexta, 11 de Fevereiro de 2022</p>
+            </article>
+                <ul class='main__content__OutrosTimes '>
+                    <!-- <li><button id= 'buttonOutrosTimes' class='geralButton'>Adiconar Horario</button></li> -->
+                </ul>
+        </main>
+    </div>
+    
+
+
+
+
+    <script src="./src/js/script.js"></script>
+     <script src="./src/js/temporizador.js"></script>
+    <script src="./src/js/relogio.js"></script> 
+    <script src="./src/js/cronometro.js"></script>
+    <script src='./src/js/constructor/horarios.js'></script>
+    <script src="./src/js/mudarCor.js"></script>
+
+</body>
+</html>
