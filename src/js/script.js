@@ -2,12 +2,8 @@ const relogio = document.querySelector(".clock")
 const data = document.querySelector('#date')
 const titlle = document.getElementById('titleClock')
 const outrosContent = document.querySelector('.main__content__OutrosTimes')
-const div = document.createElement('div')
 const temp = document.getElementById('temporizador')
 const tempHTML = document.getElementById('temp1')
-const buttonOutros = document.getElementById('buttonOutrosTimes')
-const inputCidade = document.createElement('input')
-const buttonInput = document.createElement('button')
 
 function tratarDia(number){
     switch(number){
@@ -46,23 +42,28 @@ function tratarTime(tempo){
 
 
 function criarInput(){
-
+    
     const form = document.createElement('form')
-
+    
     div.classList.add('input__content')
     inputCidade.classList.add('input__content--input')
     buttonInput.innerText = 'Adicionar'
-
+    
     form.appendChild(inputCidade)
     form.appendChild(buttonInput)
     div.appendChild(form)
     outrosContent.appendChild(div)
-
-
+    
+    
 }
 
+// const div = document.createElement('div')
+// const buttonOutros = document.getElementById('buttonOutrosTimes')
+// const inputCidade = document.createElement('input')
+// const buttonInput = document.createElement('button')
 // buttonOutros.addEventListener('click',()=>{ 
-//     div.innerHTML = ''
-//     criarOutroTime()
-// })
-
+    //     div.innerHTML = ''
+    //     criarOutroTime()
+    // })
+    
+    

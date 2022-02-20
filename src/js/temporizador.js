@@ -39,9 +39,7 @@ const temporizador = {
     },
     
 }
-temporizador.contarSegundo()
-temporizador.contarMinutos()
-temporizador.contarHoras()
+
 
 function removerClassTemporizador(){
     titlle.innerText = 'Temporizador: '
@@ -65,7 +63,9 @@ function alterarHtml(){
 
 setInterval(alterarHtml,1000)
 temp.addEventListener('click',()=>{
-   
+    temporizador.contarSegundo()
+    temporizador.contarMinutos()
+    temporizador.contarHoras()
     removerClassTemporizador()
     alterarHtml()
 })

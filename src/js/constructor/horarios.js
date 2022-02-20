@@ -1,4 +1,4 @@
-const arrCidades = ['Curidwdw']
+
 class CreateClock{
     constructor(name){
         this._nameRegiao = name
