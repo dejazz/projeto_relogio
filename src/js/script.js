@@ -1,61 +1,27 @@
-const relogio = document.querySelector(".clock")
-const data = document.querySelector('#date')
-const titlle = document.getElementById('titleClock')
+import CreateClock from "./constructor/horarios.js"
+import { updateClock,updateCalender } from "./constructor/relogio.js";
+import { temporizador } from "./constructor/temporizador.js";
 const outrosContent = document.querySelector('.main__content__OutrosTimes')
-const temp = document.getElementById('temporizador')
-const tempHTML = document.getElementById('temp1')
 
-function tratarDia(number){
-    switch(number){
-        case 0:return 'Domingo'
-        case 1:return 'Segunda'
-        case 2:return 'Terça'
-        case 3:return 'Quarta'
-        case 4:return 'Quinta'
-        case 5:return 'Sexta'
-        case 6:return 'Sábado'
-    }
-    
-}
+updateClock();
+setInterval(updateClock, 1000)
+setTimeout(updateCalender,1000)
 
-function tratarMes(number){
-    switch(number){
-        case 0:return 'Janeiro'
-        case 1:return 'Fevereiro'
-        case 2:return 'Março'
-        case 3:return 'Abril'
-        case 4:return 'Maio'
-        case 5:return 'Junho'
-        case 6:return 'Julho'
-        case 7: return 'Agosto'
-        case 8: return 'Setembro'
-        case 9: return 'Outubro'
-        case 10: return 'Novembro'
-        case 11: return 'Dezembro'
-    }
-}
-function tratarTime(tempo){
-    tempo = tempo < 10 ? "0" + tempo : tempo
-    return tempo
-}
+let horarioCuritiba       = new CreateClock(['Curitiba'])
+let horarioFLorianopolis  = new CreateClock(['Florianópolis'])
+let horarioPortoAlegre    = new CreateClock(['Porto Alegre'])
+let horarioSaoPaulo       = new CreateClock(['São Paulo'])
+let horarioRioDeJaneiro   = new CreateClock(['Rio de Janeiro'])
+let horarioMinasGerais    = new CreateClock(['Belo Horizonte'])
+let horarioEspiritoSanto  = new CreateClock(['Vitória'])
+let horarioBrasilia       = new CreateClock(['Brasília'])
 
 
 
-function criarInput(){
-    
-    const form = document.createElement('form')
-    
-    div.classList.add('input__content')
-    inputCidade.classList.add('input__content--input')
-    buttonInput.innerText = 'Adicionar'
-    
-    form.appendChild(inputCidade)
-    form.appendChild(buttonInput)
-    div.appendChild(form)
-    outrosContent.appendChild(div)
-    
-    
-}
+
+
+
+export {outrosContent}
 
 // const div = document.createElement('div')
 // const buttonOutros = document.getElementById('buttonOutrosTimes')
@@ -67,3 +33,18 @@ function criarInput(){
     // })
     
     
+    // function criarInput(){
+        
+    //     const form = document.createElement('form')
+        
+    //     div.classList.add('input__content')
+    //     inputCidade.classList.add('input__content--input')
+    //     buttonInput.innerText = 'Adicionar'
+        
+    //     form.appendChild(inputCidade)
+    //     form.appendChild(buttonInput)
+    //     div.appendChild(form)
+    //     outrosContent.appendChild(div)
+        
+        
+    // }

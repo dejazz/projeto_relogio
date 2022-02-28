@@ -1,4 +1,5 @@
-
+import { tratarDia,tratarMes,tratarTime } from "../controller/tratarDados.js";
+import { outrosContent } from "../script.js";
 class CreateClock{
     constructor(name){
         this._nameRegiao = name
@@ -55,14 +56,7 @@ class CreateClock{
 
 }
 
-let horarioCuritiba       = new CreateClock(['Curitiba'])
-let horarioFLorianopolis  = new CreateClock(['Florianópolis'])
-let horarioPortoAlegre    = new CreateClock(['Porto Alegre'])
-let horarioSaoPaulo       = new CreateClock(['São Paulo'])
-let horarioRioDeJaneiro   = new CreateClock(['Rio de Janeiro'])
-let horarioMinasGerais    = new CreateClock(['Belo Horizonte'])
-let horarioEspiritoSanto  = new CreateClock(['Vitória'])
-let horarioBrasilia       = new CreateClock(['Brasília'])
 
 
 
+export default  CreateClock

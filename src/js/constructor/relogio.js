@@ -1,5 +1,14 @@
-const mudarRelogio = document.getElementById('relogio')
+import { tratarDia,tratarMes,tratarTime } from "../controller/tratarDados.js";
+import { outrosContent } from "../script.js";
+import {buttonStart,buttonPause,buttonReset,buttonStop,textCronometro} from "./cronometro.js"
 
+
+const mudarRelogio = document.getElementById('relogio')
+const relogio = document.querySelector(".clock")
+const data = document.querySelector('#date')
+const titlle = document.getElementById('titleClock')
+const temp = document.getElementById('temporizador')
+const tempHTML = document.getElementById('temp1')
 
 function updateClock() {
     let time     = new Date();
@@ -45,3 +54,4 @@ mudarRelogio.addEventListener('click', ()=>{
 })
 
 
+export{updateClock,updateCalender,temp,titlle,relogio,data,tempHTML}

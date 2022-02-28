@@ -1,4 +1,8 @@
 
+import {tratarTime } from "../controller/tratarDados.js";
+import {temp,titlle,relogio,data,tempHTML} from "./relogio.js";
+import { outrosContent } from "../script.js";
+import {buttonStart,buttonPause,buttonReset,buttonStop,textCronometro} from "./cronometro.js"
 const temporizador = {
     horas: 0,
     minutos: 0,
@@ -70,3 +74,4 @@ temp.addEventListener('click',()=>{
     alterarHtml()
 })
 
+export {temporizador}

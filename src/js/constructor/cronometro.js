@@ -1,3 +1,6 @@
+import { tratarDia,tratarMes,tratarTime } from "../controller/tratarDados.js";
+import {temp,titlle,relogio,data,tempHTML} from "./relogio.js";
+import { outrosContent } from "../script.js";
 const buttonCronometro = document.getElementById('cronometro')
 const buttonStart = document.getElementById('start')
 const buttonPause = document.getElementById('pause')
@@ -87,3 +90,5 @@ buttonStop.addEventListener('click',()=>{
     cronometro.stop()
     cronometro.reset()
 })
+
+export{buttonCronometro,buttonStart,buttonPause,buttonReset,buttonStop,textCronometro}

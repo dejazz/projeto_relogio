@@ -1,3 +1,4 @@
+import { outrosContent } from "../script.js";
 const mudarCor = document.getElementById('mudarCor')
 const body = document.querySelector('body')
 const box = document.querySelector('aside')
