@@ -1,8 +1,9 @@
 
 import {tratarTime } from "../controller/tratarDados.js";
-import {temp,titlle,relogio,data,tempHTML} from "./relogio.js";
-import { outrosContent } from "../script.js";
-import {buttonStart,buttonPause,buttonReset,buttonStop,textCronometro} from "./cronometro.js"
+import { removerClassTemporizador } from "../controller/mudarSetUp.js";
+
+const temp = document.getElementById('temporizador')
+const tempHTML = document.getElementById('temp1')
 const temporizador = {
     horas: 0,
     minutos: 0,
@@ -45,18 +46,7 @@ const temporizador = {
 }
 
 
-function removerClassTemporizador(){
-    titlle.innerText = 'Temporizador: '
-    relogio.classList.add('remover')
-    textCronometro.classList.add('remover')
-    outrosContent.classList.add('remover')
-    buttonStart.classList.add('remover')
-    buttonPause.classList.add('remover')
-    buttonReset.classList.add('remover')
-    buttonStop.classList.add('remover')
-    tempHTML.classList.remove('remover')
-    data.classList.remove('remover')
-}
+
 
 
 function alterarHtml(){
@@ -74,4 +64,4 @@ temp.addEventListener('click',()=>{
     alterarHtml()
 })
 
-export {temporizador}
+export {temporizador,temp,tempHTML}

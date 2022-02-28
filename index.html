@@ -13,7 +13,7 @@
     <header class="header">
         <nav class="header--navBar">
             <div class="boxAnimados"></div>
-            <a class="header--navBar-a" href="#">Feriados</a>
+            <a class="header--navBar-a"  href="https://www.cnnbrasil.com.br/nacional/confira-o-calendario-de-feriados-de-2022-e-quantos-serao-prolongados/#:~:text=1%C2%BA%20de%20maio%20(domingo)%2C,Senhora%20Aparecida%20(feriado%20nacional)%3B" target="_blank">Feriados</a>
             <a class="header--navBar-a" href="#">Ferramentas</a>
             <a class="header--navBar-a" id='mudarCor'  href="#"><img class="header--navBar-a-img" src="./src/img/modo-escuro.png" alt="Modo Escuro"></a>
             <a class="header--navBar-a"><img class="header--navBar-a-img" src="./src/img/configuracao.png" alt="Configurações"></a>
@@ -26,10 +26,10 @@
     <div class="alinharContainer">
         <aside class='boxLeft '>
             <ul class = 'boxLeft__content'>
-                <li class = 'boxLeft__content--li'>
+                <!-- <li class = 'boxLeft__content--li'>
                     <img class = 'boxLeft__content--img'src="./src/img/despertador.png" alt="Despertador">
                     <a href="#" class='boxLeft__content--a la'>Despertador</a>
-                </li>
+                </li> -->
                 <li class = 'boxLeft__content--li'>
                     <img class = 'boxLeft__content--img'src="./src/img/temporizador.png" alt="Temporizador">
                     <a id='temporizador' href="#"class='boxLeft__content--a' >Temporizador</a>
@@ -48,7 +48,7 @@
         <main class='main mudarMain'>
            <article class='main__content'>
                <h1 id='titleClock' class="' main__content--titlle">Horário atual: </h1>
-               <span class=' clock main__content--relogio'>00:00:01</span>
+               <span class=' clock main__content--relogio'></span>
                <span id='temp1' class='remover main__content--relogio'></span>
                <span id='textCrono' class='remover main__content--relogio'></span>
                <div class="alinharButton">
@@ -58,7 +58,7 @@
                    <button id='reset' class="  remover main__button-cronometro ">Reset</button>
                </div>
 
-               <p id='date' class='main__content--data'>Sexta, 11 de Fevereiro de 2022</p>
+               <p id='date' class='main__content--data'></p>
             </article>
                 <ul class='main__content__OutrosTimes '>
                     <!-- <li><button id= 'buttonOutrosTimes' class='geralButton'>Adiconar Horario</button></li> -->

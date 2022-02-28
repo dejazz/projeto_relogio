@@ -1,6 +1,6 @@
-import { tratarDia,tratarMes,tratarTime } from "../controller/tratarDados.js";
-import {temp,titlle,relogio,data,tempHTML} from "./relogio.js";
-import { outrosContent } from "../script.js";
+import { tratarTime } from "../controller/tratarDados.js";
+import { removerClassCronometro } from "../controller/mudarSetUp.js";
+
 const buttonCronometro = document.getElementById('cronometro')
 const buttonStart = document.getElementById('start')
 const buttonPause = document.getElementById('pause')
@@ -52,18 +52,7 @@ const cronometro  = {
 }
     
 
-function removerClassCronometro(){
-    titlle.innerText = 'Cronômetro: '
-    relogio.classList.add('remover')
-    outrosContent.classList.add('remover')
-    data.classList.add('remover')
-    tempHTML.classList.add('remover')
-    textCronometro.classList.remove('remover')
-    buttonStart.classList.remove('remover')
-    buttonPause.classList.remove('remover')
-    buttonReset.classList.remove('remover')
-    buttonStop.classList.remove('remover')
-}
+
 
 function alterarHtml(){
     setInterval(()=>{

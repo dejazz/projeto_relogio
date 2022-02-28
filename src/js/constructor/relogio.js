@@ -1,14 +1,13 @@
 import { tratarDia,tratarMes,tratarTime } from "../controller/tratarDados.js";
-import { outrosContent } from "../script.js";
-import {buttonStart,buttonPause,buttonReset,buttonStop,textCronometro} from "./cronometro.js"
+import { removerClassRelogio } from "../controller/mudarSetUp.js";
+
 
 
 const mudarRelogio = document.getElementById('relogio')
 const relogio = document.querySelector(".clock")
 const data = document.querySelector('#date')
 const titlle = document.getElementById('titleClock')
-const temp = document.getElementById('temporizador')
-const tempHTML = document.getElementById('temp1')
+
 
 function updateClock() {
     let time     = new Date();
@@ -35,17 +34,7 @@ function updateCalender(){
 setTimeout(updateCalender,1000)
 
 
-function removerClassRelogio(){
-    relogio.classList.remove('remover')
-    outrosContent.classList.remove('remover')
-    data.classList.remove('remover')
-    tempHTML.classList.add('remover')
-    textCronometro.classList.add('remover')
-    buttonStart.classList.add('remover')
-    buttonPause.classList.add('remover')
-    buttonReset.classList.add('remover')
-    buttonStop.classList.add('remover')
-}
+
 
 mudarRelogio.addEventListener('click', ()=>{
     titlle.innerText = 'Horário atual: '
@@ -54,4 +43,4 @@ mudarRelogio.addEventListener('click', ()=>{
 })
 
 
-export{updateClock,updateCalender,temp,titlle,relogio,data,tempHTML}
+export{updateClock,updateCalender,titlle,relogio,data}

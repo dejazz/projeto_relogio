@@ -1,4 +1,4 @@
-import { tratarDia,tratarMes,tratarTime } from "../controller/tratarDados.js";
+import { tratarTime } from "../controller/tratarDados.js";
 import { outrosContent } from "../script.js";
 class CreateClock{
     constructor(name){
@@ -17,7 +17,7 @@ class CreateClock{
         return this._tempoEscrito
     }
     set nameRegiao(value){
-        const arrCidades = ['Curitiba', 'Florianópolis', 'Porto Alegre','São Paulo','Rio de Janeiro','Belo Horizonte','Vitória','Brasília']
+        const arrCidades = ['Curitiba', 'Florianópolis', 'Porto Alegre','São Paulo','Rio de Janeiro','Belo Horizonte','Vitória','Brasília','Maceió','Salvador']
         if (arrCidades.includes(value)){
             this._nameRegiao = value
         }
@@ -40,10 +40,11 @@ class CreateClock{
         spanCidade.classList.add('main__content__OutroTimes-span-cidade')
         spanTime.classList.add('clock','clock-li')
         setInterval(()=>{
-            let time = new Date
+            let time = new Date()
             this.horas = time.getHours()
             this.minutos = time.getMinutes()
             this.segundos = time.getSeconds()
+            
     
             this.tempoEscrito = `${tratarTime(this.horas)}: ${tratarTime(this.minutos)}: ${tratarTime(this.segundos)}` 
             spanTime.innerText = this.tempoEscrito
