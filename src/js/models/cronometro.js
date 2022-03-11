@@ -56,11 +56,9 @@ class Cronometro {
             textCronometro.innerText = `${tratarTime(Cronometro.horas)}: ${tratarTime(Cronometro.minutos)}: ${tratarTime(Cronometro.segundos)}`
             return textCronometro
 
-        }, 100)
+        }, 10)
     }
 }
-
-
 
 
 buttonCronometro.addEventListener('click', () => {

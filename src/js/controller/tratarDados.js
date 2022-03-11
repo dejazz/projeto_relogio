@@ -28,6 +28,8 @@ function tratarMes(number){
         case 11: return 'Dezembro'
     }
 }
+
+
 function tratarTime(tempo){
     tempo = tempo < 10 ? "0" + tempo : tempo
     return tempo

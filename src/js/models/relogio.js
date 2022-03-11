@@ -49,5 +49,6 @@ mudarRelogio.addEventListener('click', () => {
     Relogio.tempo()
     
 })
+setInterval(Relogio.tempo, 1000)
 
 export {titlle, relogio, Relogio }

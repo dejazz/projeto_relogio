@@ -7,7 +7,6 @@ class Calender {
         this.nomeDia = ''
         this.mes = ''
         this.ano = 0
-
     }
     static updateCalender() {
         let calender = new Date()
@@ -18,10 +17,8 @@ class Calender {
 
         data.innerText = `${tratarDia(dia)}, ${nomeDia} de ${tratarMes(mes)} de ${ano}`
     }
-
 }
 setTimeout(Calender.updateCalender, 1000)
-
 
 
 export { Calender, data }

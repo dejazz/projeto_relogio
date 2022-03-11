@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@500&family=Pacifico&family=Smooch&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=League+Gothic&family=Orbitron:wght@500&family=Pacifico&family=Smooch&display=swap');
+
+
 body{
     font-family:'League Gothic', sans-serif;
     padding: 0;
-    height: 100%;
     background-color: white;
 
 
@@ -11,12 +12,11 @@ body{
 .mudarCor{
     background-color: black;
     
-
 }
 h1{
-    padding: 30px;
+    padding: 5px;
     bottom: 1px;
-    position: relative;
+  
 }
 .header{
     display:flex;
@@ -24,13 +24,13 @@ h1{
     align-content: center;
     justify-content: right;
     height: 100px;
-    font-size: 25px;
+    font-size: 20px;
     background-color: #005f73;
    
 }
 
 .header--navBar-a{
-    padding-left: 40px;
+    padding-left: 30px;
     background-color: transparent;
     color: white;
     cursor: pointer;
@@ -38,8 +38,8 @@ h1{
 
 }
 .header--navBar-a-img{
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     margin-top: 12px;
     position: relative;
     top: 7px;
@@ -49,11 +49,13 @@ h1{
     
 }
 main {
-    height: 540px;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 140px;
     background-color: #005f73;
     border: 4px solid goldenrod;
-    margin: 40px;
+    margin-top: 6px;
+    margin-left: 5px;
     border-radius: 20px;
     color:white;
     
@@ -62,21 +64,18 @@ main {
     display:flex;
     flex-direction: column;
     align-items: center;
-    font-size: 60px;
+    font-size: 30px;
 }
 
 .main__content--relogio{
-    padding-bottom: 60px;
+    padding-bottom: 10px;
     transition: 0.8;
 }
 
 .boxLeft{
-    display:block;
-    position: relative;
-    
-    width: 155px;
-    height: 100vh;
-    
+    display:flex;
+    width: 70px;
+    height: 190vh;
     background-color: #ffe5d9;
 }
 
@@ -87,15 +86,14 @@ main {
     
 }
 .main__content--relogio{
-    font-size: 100px;
+    font-size: 40px;
 }
 .boxLeft__content--li{
     display:flex;
     flex-direction: column;
     align-items: center;
-    width:140px;
-    height: 100px;
-    padding-left: 10px;
+    width:70px;
+    height: 70px;
     padding-top: 15px;
     
     
@@ -105,8 +103,8 @@ main {
 }
 
 .boxLeft__content--img{
-    width:70px;
-    height: 70px;
+    width:50px;
+    height: 50px;
     padding-bottom: 10px;
     
     
@@ -114,7 +112,7 @@ main {
 .boxLeft__content--a{
     
     font-size: 20px;
-    padding: 80px  14px 0;
+    padding: 50px  0 0;
     position: absolute;
     text-align: center;
     background-image: linear-gradient(to right, #00B4DB,#0083B0);
@@ -131,11 +129,13 @@ main {
     display:flex;
     flex-wrap: wrap;
     align-content: flex-start;
-    height: 680px;
-    margin-top: 306px;
+    justify-content: center;
+    margin-top: 60px;
+    width: 200px;
+    height: 160vh;
     margin-bottom: 10px;
     border-radius: 30px;
-    
+    border: 4px solid goldenrod;
     background-color: #005f73;
     
 }
@@ -173,13 +173,13 @@ main {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: flex-end;
+    align-content: center;
     justify-content: space-evenly;
     align-items: center;
-    width: 200px;
-    height: 100px;
-    margin: 15px;
-    border-radius: 30px;
+    width: 170px;
+    height: 120px;
+    margin: 10px;
+    border-radius: 15px;
     
     background-color: black;
 }
@@ -189,18 +189,14 @@ main {
 }
 
 .main__content__OutroTimes-span-cidade{
-    font-size: 18px;
-    text-align: left;
-    margin-left: 30px;
-    
-    font-size: 20px;
+    text-align: center;
+    font-size: 25px;
     
 }
 .main__content__OutroTimes-span-cidade::after{
     content: '';
     display: block;
     width: 150px;
-    margin-right: 20px;
     border-bottom: 2px solid white;
     
     
@@ -212,7 +208,8 @@ main {
 
 .clock-li{
     text-align: center;
-    font-size: 30px;
+    padding: 5px;
+    font-size: 28px;
 }
 .mudarContent{
     background-color: black;
@@ -230,4 +227,303 @@ main {
 }
 .clock{
     font-family: 'Orbitron', sans-serif;
+}
+
+.contentFeriados{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:100%;
+    border: 3px solid goldenrod;
+    border-radius: 20px;
+    background: #005f73;
+    color: white;
+
+}
+.itensFeriado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid gold;
+    border-radius: 6px solid;
+    padding: 20px;
+    margin-top: 7px;
+
+}
+.itensFeriado__tittle{
+    text-align: center;
+    color:#aacc00;
+}
+
+.buttonPopUp{
+    position: relative;
+    margin-top: 5px;
+    left: 87%;
+    width: 30px;
+    padding: 5px;
+    border-radius: 100%;
+    border:none;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+}
+@media (min-width: 420px){
+    main{
+        width:70%;
+    }
+    .main__content__OutrosTimes {
+     
+        width: 100%;
+    }
+}
+
+@media(min-width: 768px){
+    main{
+        width:90%;
+    }
+    .main__content__OutrosTimes {
+     
+        width: 100%;
+    }
+ 
+
+}
+@media (min-width: 1440px){
+    body{
+        font-family:'League Gothic', sans-serif;
+        padding: 0;
+        height: 100%;
+        background-color: white;
+    
+    
+    }
+    .mudarCor{
+        background-color: black;
+        
+    
+    }
+    h1{
+        padding: 30px;
+        bottom: 1px;
+        position: relative;
+    }
+    .header{
+        display:flex;
+        align-items:center;
+        align-content: center;
+        justify-content: right;
+        height: 100px;
+        font-size: 25px;
+        background-color: #005f73;
+       
+    }
+    
+    .header--navBar-a{
+        padding-left: 40px;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        
+    
+    }
+    .header--navBar-a-img{
+        width: 40px;
+        height: 40px;
+        margin-top: 12px;
+        position: relative;
+        top: 7px;
+    }
+    .alinharContainer{
+        display:flex;
+        
+    }
+    main {
+        height: 540px;
+        width: 100%;
+        background-color: #005f73;
+        border: 4px solid goldenrod;
+        margin: 40px;
+        border-radius: 20px;
+        color:white;
+        
+    }
+    .main__content{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 60px;
+    }
+    
+    .main__content--relogio{
+        padding-bottom: 60px;
+        transition: 0.8;
+    }
+    
+    .boxLeft{
+        display:block;
+        position: relative;
+        
+        width: 155px;
+        height: 100vh;
+        
+        background-color: #ffe5d9;
+    }
+    
+    .boxLeft__content{
+        display:flex;
+        flex-direction: column;
+        align-items: center; 
+        
+    }
+    .main__content--relogio{
+        font-size: 100px;
+    }
+    .boxLeft__content--li{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width:140px;
+        height: 100px;
+        padding-left: 10px;
+        padding-top: 15px;
+        
+        
+    }
+    .boxLeft__content--li:hover{
+        background-color: #495057;
+    }
+    
+    .boxLeft__content--img{
+        width:70px;
+        height: 70px;
+        padding-bottom: 10px;
+        
+        
+    }
+    .boxLeft__content--a{
+        
+        font-size: 20px;
+        padding: 80px  14px 0;
+        position: absolute;
+        text-align: center;
+        background-image: linear-gradient(to right, #00B4DB,#0083B0);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color:transparent;
+        
+    }
+    .la{
+        background-image: linear-gradient(to right, #f12711,#f5af19)
+    }
+    
+    .main__content__OutrosTimes{
+        display:flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        height: 680px;
+        margin-top: 306px;
+        margin-bottom: 10px;
+        border-radius: 30px;
+        
+        background-color: #005f73;
+        
+    }
+    
+    .geralButton {
+        border: none;
+        padding: 30px;
+        margin: 20px;
+        border-radius: 20px;
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #90be6d;
+    }
+    .main__button-cronometro{
+        width: 150px;
+        height: 60px;
+        margin: 10px;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #90be6d;
+    }
+    .alinharButton{
+        display: flex;
+    }
+    .geralButton:hover{
+        background-color: #aacc00;
+    }
+    
+    .main__button-cronometro:hover{
+        background-color: #aacc00;
+    }
+    
+    .main__content__OutrosTimes--li{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 210px;
+        height: 120px;
+        margin: 10px;
+        border-radius: 15px;
+        
+        background-color: black;
+    }
+    
+    .remover{
+        display:none;
+    }
+    
+    .main__content__OutroTimes-span-cidade{
+        text-align: center;
+        font-size: 25px;
+        
+    }
+    .main__content__OutroTimes-span-cidade::after{
+        content: '';
+        display: block;
+        width: 150px;
+        border-bottom: 2px solid white;
+        
+        
+    }
+    
+    .icon{
+        margin-left: 0;
+    }
+    
+    .clock-li{
+        text-align: center;
+        padding: 5px;
+        font-size: 28px;
+    }
+    .mudarContent{
+        background-color: black;
+        border: 4px solid goldenrod;
+        color: gold;
+    }
+    .mudarCorBox{
+        background-color: #023047;
+        
+    }
+    
+    .mudarCorOutrosTimes{
+        background-color: black;
+        color:gold;
+    }
+    .clock{
+        font-family: 'Orbitron', sans-serif;
+    }
+    
+    .contentFeriados{
+        width:50%;
+        background-color: #005f73;
+    }
+    .buttonPopUp{
+      left: 96%;
+    }
 }

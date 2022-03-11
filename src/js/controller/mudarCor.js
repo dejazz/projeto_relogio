@@ -1,4 +1,5 @@
 import { outrosContent } from "../script.js";
+
 const mudarCor = document.getElementById('mudarCor')
 const body = document.querySelector('body')
 const box = document.querySelector('aside')
@@ -6,6 +7,7 @@ const contentMain = document.querySelector('main')
 
 
 let count = true
+
 function mudar(){
 
 if(count == true){

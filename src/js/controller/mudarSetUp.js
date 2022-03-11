@@ -1,7 +1,9 @@
-import {titlle,relogio,data} from "../constructor/relogio.js";
-import {buttonStart,buttonPause,buttonReset,buttonStop,textCronometro} from "../constructor/cronometro.js"
-import { tempHTML } from "../constructor/temporizador.js";
-import { outrosContent } from "../script.js";
+import {titlle,relogio} from "../models/relogio.js";
+import {buttonStart,buttonPause,buttonReset,textCronometro} from "../models/cronometro.js"
+import { tempHTML } from "../models/temporizador.js";
+import { outrosContent} from "../script.js";
+import {data} from "../models/calender.js"
+
 
 
 function removerClassCronometro(){
@@ -14,7 +16,7 @@ function removerClassCronometro(){
     buttonStart.classList.remove('remover')
     buttonPause.classList.remove('remover')
     buttonReset.classList.remove('remover')
-    buttonStop.classList.remove('remover')
+   
 }
 
 function removerClassRelogio(){
@@ -26,7 +28,7 @@ function removerClassRelogio(){
     buttonStart.classList.add('remover')
     buttonPause.classList.add('remover')
     buttonReset.classList.add('remover')
-    buttonStop.classList.add('remover')
+   
 }
 
 
@@ -38,10 +40,11 @@ function removerClassTemporizador(){
     buttonStart.classList.add('remover')
     buttonPause.classList.add('remover')
     buttonReset.classList.add('remover')
-    buttonStop.classList.add('remover')
     tempHTML.classList.remove('remover')
     data.classList.remove('remover')
 }
+
+
 
 
 export {removerClassCronometro,removerClassRelogio,removerClassTemporizador}
