@@ -1,3 +1,5 @@
+const ul = document.querySelector('.contentFeriados')
+const divPopUp = document.getElementById('divFeriados')
 import FeriadosBrasil from "../models/BuscarFeriados.js"
 await FeriadosBrasil.getFeriados()
 
@@ -7,14 +9,12 @@ class InterfaceFeriados {
     static template(e) {
 
         e.preventDefault()
-        const ul = document.querySelector('.contentFeriados')
         const buttonPopUp = document.querySelector('.buttonPopUp')
-        ul.innerHTML = ''
+        divPopUp.classList.remove('remover')
         ul.classList.remove('remover')
         buttonPopUp.classList.remove('remover')
-        buttonPopUp.innerText = 'X'
 
-        ul.appendChild(buttonPopUp)
+        
         FeriadosBrasil.feriados.forEach((item) => {
             const { date, name, type } = item
 
@@ -33,9 +33,14 @@ class InterfaceFeriados {
             `
             ul.appendChild(li)
         })
-        console.log(ul)
+   
         return ul
     }
+        mostrarResult(){
+            const mostrarFeriado = document.getElementById('feriados')
+
+            mostrarFeriado.addEventListener('click',PopUp.removerContent())
+        }
 }
 
-export default InterfaceFeriados
+export  {InterfaceFeriados,ul,divPopUp}

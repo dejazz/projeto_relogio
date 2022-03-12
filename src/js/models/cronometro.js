@@ -77,4 +77,4 @@ buttonReset.addEventListener('click', () => {
 })
 
 
-export { buttonCronometro, buttonStart, buttonPause, buttonReset, textCronometro }
+export { Cronometro,buttonCronometro, buttonStart, buttonPause, buttonReset, textCronometro }

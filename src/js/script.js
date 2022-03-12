@@ -1,5 +1,5 @@
 import CriarHorarios from "./controller/CriarHorarios.js";
-import InterfaceFeriados from "./controller/InterfaceFeriados.js";
+import {InterfaceFeriados} from "./controller/InterfaceFeriados.js";
 import PopUp from "./controller/popUp.js";
 import { Relogio} from "./models/relogio.js";
 import { mudarCor,mudar } from "./controller/mudarCor.js";
@@ -11,7 +11,7 @@ const localFeriados = document.getElementById('localFeriados')
 
 
 CriarHorarios.CriarHorario(cidades)
-
+PopUp.removerInterface()
 
 mudarCor.addEventListener('click', mudar)
 localFeriados.addEventListener('click',(e)=>{

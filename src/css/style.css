@@ -9,6 +9,12 @@ body{
 
 
 }
+
+.remover{
+    display: none;
+   
+}
+
 .mudarCor{
     background-color: black;
     
@@ -58,20 +64,30 @@ main {
     margin-left: 5px;
     border-radius: 20px;
     color:white;
+    box-sizing: content-box;
     
 }
 .main__content{
     display:flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     font-size: 30px;
 }
 
 .main__content--relogio{
+     width: 240px;
     padding-bottom: 10px;
-    transition: 0.8;
+    white-space: nowrap;
+    box-sizing: border-box;
+    -webkit-text-size-adjust:100%;
+    -webkit-box-sizing:border-box;
+    text-align: center;
 }
 
+.main__content--titlle{
+    text-align: center;
+}
 .boxLeft{
     display:flex;
     width: 70px;
@@ -85,9 +101,7 @@ main {
     align-items: center; 
     
 }
-.main__content--relogio{
-    font-size: 40px;
-}
+
 .boxLeft__content--li{
     display:flex;
     flex-direction: column;
@@ -130,8 +144,8 @@ main {
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: center;
-    margin-top: 60px;
-    width: 200px;
+    margin-top: 80px;
+    width: 220px;
     height: 160vh;
     margin-bottom: 10px;
     border-radius: 30px;
@@ -150,11 +164,10 @@ main {
     background-color: #90be6d;
 }
 .main__button-cronometro{
-    width: 150px;
-    height: 60px;
+    padding-bottom: 15px;
     margin: 10px;
     border: none;
-    font-size: 20px;
+    font-size: 16px;
     cursor: pointer;
     background-color: #90be6d;
 }
@@ -184,9 +197,6 @@ main {
     background-color: black;
 }
 
-.remover{
-    display:none;
-}
 
 .main__content__OutroTimes-span-cidade{
     text-align: center;
@@ -207,9 +217,17 @@ main {
 }
 
 .clock-li{
+    position: relative;
+    right: 28px;
     text-align: center;
+    width: 100px;
     padding: 5px;
     font-size: 28px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    -webkit-text-size-adjust:100%;
+    -webkit-box-sizing:border-box;
+    text-align: center;
 }
 .mudarContent{
     background-color: black;
@@ -230,16 +248,18 @@ main {
 }
 
 .contentFeriados{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width:100%;
-    border: 3px solid goldenrod;
+       
+    top: 35px;
+    width: 73%;
+    height: 110vh;
     border-radius: 20px;
-    background: #005f73;
+    background-color: #005f73;
     color: white;
+    z-index: 2;
+    position: absolute;
+    overflow: auto;
 
-}
+    }
 .itensFeriado{
     display: flex;
     flex-direction: column;
@@ -248,7 +268,9 @@ main {
     border: 2px solid gold;
     border-radius: 6px solid;
     padding: 20px;
-    margin-top: 7px;
+    margin-top: 30px;
+    
+    
 
 }
 .itensFeriado__tittle{
@@ -259,15 +281,22 @@ main {
 .buttonPopUp{
     position: relative;
     margin-top: 5px;
-    left: 87%;
     width: 30px;
-    padding: 5px;
-    border-radius: 100%;
+    bottom:11vh;
+    left: 64vw;
+    padding: 2px;
+    border-radius: 50%;
     border:none;
-    background-color: transparent;
-    color: white;
+    background-color: white;
+    color: black;
+    z-index: 3;
     font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+
 }
+
+
 @media (min-width: 420px){
     main{
         width:70%;
@@ -287,7 +316,7 @@ main {
         width: 100%;
     }
  
-
+    
 }
 @media (min-width: 1440px){
     body{
@@ -355,11 +384,8 @@ main {
         font-size: 60px;
     }
     
-    .main__content--relogio{
-        padding-bottom: 60px;
-        transition: 0.8;
-    }
     
+ 
     .boxLeft{
         display:block;
         position: relative;
@@ -377,7 +403,10 @@ main {
         
     }
     .main__content--relogio{
-        font-size: 100px;
+        font-size: 80px;
+        position:relative;
+        right:80px;
+        
     }
     .boxLeft__content--li{
         display:flex;
@@ -422,7 +451,7 @@ main {
         flex-wrap: wrap;
         align-content: flex-start;
         height: 680px;
-        margin-top: 306px;
+        margin-top: 356px;
         margin-bottom: 10px;
         border-radius: 30px;
         
@@ -440,32 +469,19 @@ main {
         background-color: #90be6d;
     }
     .main__button-cronometro{
+        padding: 0;
         width: 150px;
         height: 60px;
-        margin: 10px;
+        text-align: center;
         border: none;
         font-size: 20px;
         cursor: pointer;
         background-color: #90be6d;
+        
     }
-    .alinharButton{
-        display: flex;
-    }
-    .geralButton:hover{
-        background-color: #aacc00;
-    }
-    
-    .main__button-cronometro:hover{
-        background-color: #aacc00;
-    }
-    
+  
     .main__content__OutrosTimes--li{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: space-evenly;
-        align-items: center;
+      
         width: 210px;
         height: 120px;
         margin: 10px;
@@ -473,57 +489,27 @@ main {
         
         background-color: black;
     }
-    
-    .remover{
-        display:none;
-    }
-    
-    .main__content__OutroTimes-span-cidade{
-        text-align: center;
-        font-size: 25px;
-        
-    }
-    .main__content__OutroTimes-span-cidade::after{
-        content: '';
-        display: block;
-        width: 150px;
-        border-bottom: 2px solid white;
-        
-        
-    }
-    
-    .icon{
-        margin-left: 0;
-    }
-    
+
     .clock-li{
         text-align: center;
         padding: 5px;
         font-size: 28px;
+        position: relative;
+        right: 27px;
     }
-    .mudarContent{
-        background-color: black;
-        border: 4px solid goldenrod;
-        color: gold;
-    }
-    .mudarCorBox{
-        background-color: #023047;
-        
-    }
-    
-    .mudarCorOutrosTimes{
-        background-color: black;
-        color:gold;
-    }
-    .clock{
-        font-family: 'Orbitron', sans-serif;
-    }
-    
-    .contentFeriados{
-        width:50%;
-        background-color: #005f73;
+   
+    #textCrono{
+        position: relative;
+        left: 10px;
     }
     .buttonPopUp{
-      left: 96%;
+        bottom: 8.4vh;
+        left: 71vw;
     }
+  
+    .contentFeriados{
+
+    }
+  
+    
 }
