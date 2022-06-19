@@ -1,4 +1,6 @@
 # Relógio Web
+<img src="https://i.imgur.com/W5VF6f9.png" alt="imagem do site">
+
 ## Link Site
 url: https://projeto-relogio-gabrielsch.vercel.app/
 ## Funcionalidades
